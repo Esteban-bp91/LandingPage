@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Pepe, Manuel y Esteban">
+        <meta name="description" content="Pagina detalle producto Trenzatress">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Producto.css">
+        <title>Trenzatress SL</title> 
+        <script src="js/navigation.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        <!-- libreria que vamos a utililzar para los alerts es Sweet alert --> 
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="media/img/Logo.jpg" alt="Logo Trenzatress" class="logo" width="110" height="60"></a>
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav>
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="nav-list">
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="index.html#sobrenosotros">Sobre nosotros</a></li>
+                    <li><a href="index.html#formulario">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="resumen">
+            <div class="bloque-resumen">
+                <div class="bloque">
+                    <div class="resumen-izq">
+                        <img src="media/img/riel extensible.jpg" alt="Presentación en carrete 200 metros" width="250">
+                        <h3>Cordón para riel extensible</h3>
+                        <p>Cordón en poliéster para rieles extensibles</p>
+                    </div>
+                    <div class="resumen-der">
+                        <img src="media/img/Detalle-3mm-polip.jpg" alt="detalle del trenzado granete" width="250">
+                        <form action="Producto.html">
+                            <input class="cantidad" type="number" name="cantidad" placeholder="   Cantidad" required>
+                            <select class="diametro" name="diametro" required> 
+                                <option>1 mm</option> 
+                                <option>2 mm</option> 
+                                <option>3 mm</option> 
+                                <option>4 mm</option> 
+                                <option>5 mm</option> 
+                                <option>6 mm</option> 
+                            </select> 
+                            <select class="color" name="color" required> 
+                                <option>Blanco</option> 
+                                <option>Negro</option> 
+                                <option>Gris</option> 
+                                <option>Beige</option> 
+                            </select>
+                            <select class="metros" name="metros" required> 
+                                <option>Carrete 200 metros</option> 
+                                <option>Bobina 500 metros</option>  
+                            </select>
+                            <input class="comprar" type="submit" value="Comprar" name="Comprar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="descripcion">
+            <div class="bloque-descripcion">
+                <h4>Descripción del producto:</h4>
+                <div>
+                    <ul>
+                        <li>Diámetros disponibles: 1-2-3-4-5-6 mm</li>
+                        <li>Colores disponibles: Blanco, negro, gris y beige</li>
+                        <li>Poliéster multifilamento de alta tenacidad trenzado, alma interior de poliéster texturizado.</li>
+                        <li>Presentación: Carrete de 200 metros o bobina de 500 metros</li>
+                        <li>Baja elasticidad</li>
+                        <li>Alta resistencia a la rotura y fricción</li>
+                        <li>Fabricado en España</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="bloque">
+                <div class="bloque-footer">
+                    <h4>Localización:</h4>
+                    <p>Crtra. Callosa-Catral 274 <br>(Barrio San José - Lo Meca)</p>
+                    <p>03360 - Callosa de Segura</p>
+                </div>
+                <div class="bloque-footer">
+                    <h4>Contacto:</h4>
+                    <p>Teléfono: +34 636917178</p>
+                    <p>Correo electrónico: info@trenzatress.com</p>
+                </div>
+                <div class="bloque-footer">
+                    <h4>Redes Sociales:</h4>
+                    <p>Instagram: @Trenzatress</p>
+                    <p>LinkedIn: Trenzatress-SL</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="bloque">Trenzatress SL 2023</p>
+        </footer>
+    </body>
+</html>

@@ -150,6 +150,7 @@ nav ul li a{
 #productos{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 #bloque-productos{
@@ -190,11 +191,15 @@ nav ul li a{
     width: 20%;
 }
 
-
-footer{
-    background-color: #EDE0C9;
+#footer{
+    margin: auto;
+    max-width: 1024px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-footer p{
-    justify-content: center;
+#footer .bloque-footer{
+    width: 30%;
+    padding: 20px;
 }

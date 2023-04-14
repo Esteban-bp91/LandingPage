@@ -50,15 +50,6 @@ p{
     justify-content: center;
 }
 
-.bloque-presentacion{
-    margin: auto;
-    max-width: 1024px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    margin-left: 30%;
-}
-
 .boton{
     font-size: 14px;
     font-weight: 700;
@@ -73,13 +64,13 @@ p{
 header{
     margin: auto;
     max-width: 1024px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .logo{
     float: left;
     position: relative;
-    left: 20px;
+    left: 40px;
     bottom: 10px;
 }
 
@@ -109,6 +100,12 @@ nav ul li{
 nav ul li a{
     display: block;
     padding: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
 }
 
 .abrir-menu,
@@ -165,110 +162,117 @@ nav ul li a{
     }
 }
 
-#presentacion{
+#resumen{
+    padding: 60px;
     background-color: #EDE0C9;
 }
 
-.presentacion{
-    text-align: justify;
-    min-width: 500px;
-    margin: 20px;
-    padding: 10px;
+#resumen .bloque-resumen{
+    display: flex;
+    justify-content: center;
 }
 
-.presentacion a{
+#resumen .bloque-resumen .resumen-izq{
+    margin-right: 40px;
+}
+
+#resumen .bloque-resumen .resumen-izq img{
     position: relative;
-    top: 10px;
-    left: 200px;
+    left: 45px;
+    margin-bottom: 50px;
 }
 
-.imagen{
-    margin: 20px;
-    padding: 10px;
+#resumen .bloque-resumen .resumen-der{
+    margin-left: 40px;
 }
 
-.imagen img{
-    box-shadow: 5px 10px 18px;
-    height: 300px;
-    width: 200px;
-    border-radius: 5px;
+#resumen .bloque-resumen .resumen-der img{
+    margin-bottom: 45px;
 }
 
-.card{
-    margin: 20px;
-    padding: 10px;
-    text-align: justify;
-    font-size: 16px;
-    background-color: #d3b98d;
-    border: solid 2px #c29a56;
-    border-radius: 5px;
-    box-shadow: 5px 10px 18px;
-    width: 350px;
+#resumen .bloque-resumen .resumen-der form{
+    display: flex;
+    flex-direction: column;
 }
 
-#formulario{
-    background-color: #EDE0C9;
-}
-
-#formulario input{
-    background-color: #ceb282;
-    border: solid 2px #c29a56;
-    border-radius: 4px;
+#resumen .bloque-resumen .resumen-der form .comprar{
+    position: relative;
+    top: 40px;
+    right: 130px;
+    width: 50%;
     height: 30px;
-    margin: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ceb282;
 }
 
-.bloque-formulario{
-    display: grid;
-    grid-template-columns: 1fr 60px 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr 0.5fr;
-    grid-template-areas: 
-    'h2 h2 h2'
-    'nombre . correo'
-    'telefono . asunto'
-    'mensaje mensaje mensaje'
-    'boton boton boton';
+
+#resumen .bloque-resumen .resumen-der form .comprar:hover {
+    background-color: #c29a56;
 }
 
-.bloque-formulario button{
-    grid-area: boton;
-    width: 80px;
-    height: 35px;
-    text-align: center;
-    margin-left: 40%;
+#resumen .bloque-resumen .resumen-der form .cantidad{
+    margin: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px #c29a56;
 }
 
-.bloque-formulario .titulo{
-    grid-area: h2;
-    height: 50px;
+#resumen .bloque-resumen .resumen-der form .diametro{
+    margin: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px #c29a56;
 }
 
-.bloque-formulario .nombre{
-    grid-area: nombre;
-    height: 50px;
+#resumen .bloque-resumen .resumen-der form .color{
+    margin: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px #c29a56;
 }
 
-.bloque-formulario .telefono{
-    grid-area: telefono;
-    height: 50px;
+#resumen .bloque-resumen .resumen-der form .metros{
+    margin: 5px;
+    padding-left: 10px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px #c29a56;
 }
 
-.bloque-formulario .correo{
-    grid-area: correo;
-    height: 50px;
+#resumen img{
+    border-radius: 5px;
+    box-shadow: 8px 10px 10px grey;
 }
 
-.bloque-formulario .asunto{
-    grid-area: asunto;
-    height: 50px;
+#descripcion{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
 }
 
-#formulario .mensaje{
-    grid-area: mensaje;
-    width: 90%;
-    height: 100px;
+#descripcion .bloque-descripcion{
+    display: block;
+}
+
+#footer{
+    margin: auto;
+    max-width: 1024px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer .bloque-footer{
+    width: 30%;
+    padding: 20px;
 }
 
 footer{
     background-color: #EDE0C9;
 }
+

@@ -1,6 +1,7 @@
 function enviar(){
     swal("Recibido!", "Hemos recibido su mensaje correctamente!", "success");
-}enviar();
+}
+
 
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
