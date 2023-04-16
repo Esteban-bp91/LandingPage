@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <!--Aquí tenemos los enlaces entre el html con el javascript, el css, el titulo y el link de la fuente utilizada-->
         <meta charset="UTF-8">
         <meta name="author" content="Pepe, Manuel y Esteban">
         <meta name="description" content="Pagina detalle producto Trenzatress">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/Producto.css">
+        <link rel="stylesheet" href="css/Producto.css"> <!-- Conexion con su respectivo CSS-->
         <title>Trenzatress SL</title> 
-        <script src="js/navigation.js" defer></script>
+        <script src="js/navigation.js" defer></script> <!-- Conexion con su respectivo JavaScript-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
         <!-- libreria que vamos a utililzar para los alerts es Sweet alert --> 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
+        <!--En el header lo que tenemos es lo mismo que en los anteriores html, tenemos el menu de inicio
+        el cual tenemos Productos, sobre nosotros y formulario dentro de un nav con un ul y tres li-->
         <header>
             <a href="index.html"><img src="media/img/Logo.jpg" alt="Logo Trenzatress" class="logo" width="110" height="60"></a>
             <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-            <nav>
-                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
                 <ul class="nav-list">
                     <li><a href="Productos.html">Productos</a></li>
                     <li><a href="index.html#sobrenosotros">Sobre nosotros</a></li>
@@ -26,6 +29,8 @@
                 </ul>
             </nav>
         </header>
+        <!--En este section tenemos el resumen de lo que vendemos con varias fotos del cordon e información
+        sobre el mismo dentro de un div-->
         <section id="resumen">
             <div class="bloque-resumen">
                 <div class="bloque">
@@ -37,7 +42,10 @@
                     <div class="resumen-der">
                         <img src="media/img/Detalle-3mm-polip.jpg" alt="detalle del trenzado granete" width="250">
                         <form action="Producto.html">
-                            <input class="cantidad" type="number" name="cantidad" placeholder="   Cantidad" required>
+                            <!--Aqui tenemos un input number para la cantidad que queremos a la hora de hacer la compra-->
+                            <input class="cantidad" id="cantidad" type="number" name="cantidad" placeholder="Cantidad" required>
+                            <!--Aqui tenemos un select que nos da la opcion de elegir desde 1mm de grosor del riel
+                            hasta 6mm de grosor-->
                             <select class="diametro" name="diametro" required> 
                                 <option>1 mm</option> 
                                 <option>2 mm</option> 
@@ -46,22 +54,32 @@
                                 <option>5 mm</option> 
                                 <option>6 mm</option> 
                             </select> 
+                            <!--En este select tenemos 4 opciones las cuales nos dejan escoger el color
+                            que queremos para la compra de nuestro riel-->
                             <select class="color" name="color" required> 
                                 <option>Blanco</option> 
                                 <option>Negro</option> 
                                 <option>Gris</option> 
                                 <option>Beige</option> 
                             </select>
+                            <!--En este select nos dice que podemos elegir entre carrete de 200 metros o bobina
+                            de 500 metros-->
                             <select class="metros" name="metros" required> 
                                 <option>Carrete 200 metros</option> 
                                 <option>Bobina 500 metros</option>  
                             </select>
-                            <input class="comprar" type="submit" value="Comprar" name="Comprar">
+                            <!--Input de un boton que cuando le pinches compres lo que tu querías-->
+                            <!--A la hora de comprar el producto nos pide la cantidad, si no ponemos cantidad nos da error
+                            y el campo nos obliga a poner una cantidad por encima de 0 para comprar, pero el mensaje de 
+                            que se ha comprado no sale y no sabemos el por que-->
+                            <input class="comprar" type="submit" value="Comprar" name="Comprar" onclick="comprar()">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        <!--En este section tenemos una descripción breve del producto que tenemos en stock para
+        vender al público-->
         <section id="descripcion">
             <div class="bloque-descripcion">
                 <h4>Descripción del producto:</h4>
@@ -78,6 +96,8 @@
                 </div>
             </div>
         </section>
+        <!--Footer que esta en todos los html que da la información de la empresa con su Localización,
+        Contacto y sus distintas Redes Sociales-->
         <section id="footer">
             <div class="bloque">
                 <div class="bloque-footer">
@@ -97,6 +117,7 @@
                 </div>
             </div>
         </section>
+        <!--Último footer donde decimos el nombre de la empresa y el año actual-->
         <footer>
             <p class="bloque">Trenzatress SL 2023</p>
         </footer>

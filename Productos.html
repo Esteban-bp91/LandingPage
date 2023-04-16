@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!--Aquí tenemos los enlaces entre el html con el javascript, el css, el titulo y el link de la fuente utilizada-->
     <meta charset="UTF-8">
     <meta name="author" content="Esteban Baeza Pérez">
     <meta name="description" content="Landing Page Trenzatress">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/productos.css"> <!-- Conexion con su respectivo CSS-->
+    <script src="js/navigation.js" defer></script> <!-- Conexion con su respectivo JavaScript-->
     <title>Trenzatress SL</title> 
 </head>
 <body>
-    <header>
-        <div>
-            <a href="index.html"><img src="media/img/Logo.jpg" alt="Logo Trenzatress" class="logo" width="110" height="60"></a>
-            <nav>
-                <ul>
-                    <li><a href="Productos.html">Productos</a></li>
-                    <li><a href="index.html#sobrenosotros">Sobre nosotros</a></li>
-                    <li><a href="index.html#formulario">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header> <!--En el header lo que tenemos es lo mismo que en los anteriores html, tenemos el menu de inicio
+        el cual tenemos Productos, sobre nosotros y formulario dentro de un nav con un ul y tres li-->
+        <a href="index.html"><img src="media/img/Logo.jpg" alt="Logo Trenzatress" class="logo" width="110" height="60"></a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="index.html#sobrenosotros">Sobre nosotros</a></li>
+                <li><a href="index.html#formulario">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="presentacion">
+    <section id="presentacion"> <!--En este section tenemos los titulos h1, un párrafo de texto y una imagen-->
         <div class="bloque-presentacion">
             <div class="presentacion">
                 <h1>Cordelería de alta calidad</h1>
@@ -33,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section id="productos">
+    <section id="productos">  <!--En este section tenemos la presentación de los productos con la imagen del producto, el título y precio-->
         <div id="bloque-productos">
             <div class="producto">
                 <a href="Producto.html"><img src="media/img/riel extensible.jpg"></a>
@@ -79,7 +81,8 @@
             </div>
         </div>
     </section>
-    <section id="footer">
+    <section id="footer"> <!--Footer que esta en todos los html que da la información de la empresa con su Localización,
+        Contacto y sus distintas Redes Sociales-->
         <div class="bloque">
             <div class="bloque-footer">
                 <h4>Localización:</h4>
@@ -98,7 +101,7 @@
             </div>
         </div>
     </section>
-    <footer >
+    <footer> <!--Último footer donde decimos el nombre de la empresa y el año actual-->
         <p class="bloque">Trenzatress SL 2023</p>
     </footer>
 </body>
