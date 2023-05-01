@@ -17,9 +17,35 @@ cerrar.addEventListener("click", () => {
 const cant = document.getElementById("cantidad");
 
 function comprar(){
+    let cant = document.getElementById("cantidad");
     if(cant.value>=1){
         swal("Comprado!", "Hemos recibido su pedido!", "success");
     }else{
-        alert("Cantidad Errónea");
+        swal("Error!", "Cantidad Errónea!", "warning");
+    }
+}
+
+
+function cambiarImagen(){
+    console.log("Estamos dentro de cambiarImagen");
+
+    let color = document.getElementById("color");
+    let imagen = document.getElementById("img");
+
+    if (color.value == "Blanco"){
+        console.log("Blanco");
+        imagen.src="media/img/riel extensible.jpg";
+    }
+    if (color.value == "Negro"){
+        console.log("Negro");
+        imagen.src="media/img/negro.jpeg";
+    }
+    if (color.value == "Gris"){
+        console.log("Gris");
+        imagen.src="media/img/gris.jpeg";
+    }
+    if (color.value == "Beige"){
+        console.log("Beige");
+        imagen.src="media/img/beige.jpeg";
     }
 }
