@@ -49,3 +49,12 @@ function cambiarImagen(){
         imagen.src="media/img/beige.jpeg";
     }
 }
+
+
+function actualizarPrecio() {   //Funcion actualizarPrecio para actualizar el precio según la cantidad seleccionada. No funciona
+    let cantidad = document.getElementById("cantidad").value;
+    let precio = document.getElementById("precio").value
+    let precioTotal = cantidad * precio;
+    let precioFormateado = precioTotal.toFixed(2) + "€";
+    document.getElementById("precio").innerHTML = precioFormateado;
+  } 

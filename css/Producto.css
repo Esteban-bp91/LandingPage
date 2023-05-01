@@ -392,4 +392,9 @@ footer{
     footer{
         background-color: #EDE0C9;
     }
+
+    #precio{
+        font-size: large;
+        text-decoration: solid;
+    }
 }
